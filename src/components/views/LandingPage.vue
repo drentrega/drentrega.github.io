@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import Post from '@/components/Post';
+import Post from '@/components/PostInCard';
 
 export default {
   components: {

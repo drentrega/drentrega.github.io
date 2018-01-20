@@ -22,9 +22,18 @@
 
           <v-tabs-content id="descricao">
             <v-card flat>
+
               <v-card-text>
-                <p>Faremos uma SPA que faça controle de tarefas!</p>
+                <p>
+                  Faremos uma SPA que faça controle de tarefas! Para isso usaremos o <v-chip label class="line">vue-cli
+                  </v-chip> para montar a estrutura básica do nosso projeto.
+                </p>
+                <v-alert outline color="grey" icon="code" :value="true">
+                  npm i -g vue-cli
+                </v-alert>
+
               </v-card-text>
+
             </v-card>
           </v-tabs-content>
 
@@ -54,3 +63,9 @@
     }),
   };
 </script>
+
+<style scoped>
+  .inline {
+    max-height: 2em;
+  }
+</style>
