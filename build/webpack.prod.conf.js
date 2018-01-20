@@ -20,25 +20,25 @@ const webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,
-      extract: true
+      extract: true,
     })
   },
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
-      'process.env': env
+      'process.env': env,
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false
+        warnings: false,
       },
-      sourceMap: true
+      sourceMap: true,
     }),
     // extract css into its own file
     new ExtractTextPlugin({
@@ -48,7 +48,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // duplicated CSS from different components can be deduped.
     new OptimizeCSSPlugin({
       cssProcessorOptions: {
-        safe: true
+        safe: true,
       }
     }),
     // generate docs index.html with correct asset hash for caching.
@@ -56,19 +56,19 @@ const webpackConfig = merge(baseWebpackConfig, {
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: config.build.index,
-      template: 'index.html',
+      template: 'src/template.html',
       inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
-        removeAttributeQuotes: true
+        removeAttributeQuotes: true,
         // more options:
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency',
       serviceWorkerLoader: `<script>${loadMinified(path.join(__dirname,
-        './service-worker-prod.js'))}</script>`
+        './service-worker-prod.js'))}</script>`,
     }),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
@@ -93,7 +93,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // copy custom static assets
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, '../static'),
+        from: path.resolve(__dirname, '../src/static'),
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
@@ -101,10 +101,10 @@ const webpackConfig = merge(baseWebpackConfig, {
     // service worker caching
     new SWPrecacheWebpackPlugin({
       cacheId: 'challenges',
-      filename: 'service-worker.js',
-      staticFileGlobs: ['docs/**/*.{js,html,css}'],
+      filename: 'static/service-worker.js',
+      staticFileGlobs: ['./**/*.{js,html,css}'],
       minify: true,
-      stripPrefix: 'docs/'
+      stripPrefix: '/'
     })
   ]
 })
