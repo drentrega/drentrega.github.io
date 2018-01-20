@@ -1,9 +1,9 @@
 {
-  "name": "@fj/challenges",
-  "version": "0.1.0",
+  "name": "@fj/farmaciaja.github.io",
+  "version": "1.0.0",
   "description": "Users service",
-  "main": "server.js",
-  "repository": "https://github.com/farmaciaja/svc_users",
+  "main": "build/build.js",
+  "repository": "https://github.com/farmaciaja/farmaciaja.github.io",
   "author": "@fj",
   "contributors": [
     "Filipe Forattini <filipeforattini1@gmail.com> (https://github.com/filipeforattini/)"

@@ -2,9 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import LayoutApp from '@/components/layouts/App';
-import LandingPage from '@/components/pages/LandingPage';
-import JdFrontEndView from '@/components/jds/FrontEndView';
-import ChallengeFrontEndView from '@/components/challenges/FrontEndView';
+import ViewLandingPage from '@/components/views/LandingPage';
+import ViewJdFrontEnd from '@/components/views/jds/FrontEndView';
+import ViewChallengeFrontEnd from '@/components/views/challenges/FrontEndView';
 
 
 Vue.use(Router);
@@ -18,7 +18,7 @@ export default new Router({
       children: [
         {
           path: 'front-end',
-          component: ChallengeFrontEndView,
+          component: ViewChallengeFrontEnd,
         },
       ],
     },
@@ -28,13 +28,13 @@ export default new Router({
       children: [
         {
           path: '/jds/front-end',
-          component: JdFrontEndView,
+          component: ViewJdFrontEnd,
         },
       ],
     },
     {
       path: '*',
-      component: LandingPage,
+      component: ViewLandingPage,
     },
   ],
 });
