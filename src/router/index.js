@@ -11,7 +11,7 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/pr/challenges',
+      path: '/challenges',
       component: LayoutApp,
       children: [
         {
@@ -22,7 +22,7 @@ export default new Router({
       ],
     },
     {
-      path: '/pr/jds/front-end',
+      path: '/jds/front-end',
       name: 'front-end-jd',
       component: ViewJdFrontEnd,
     },

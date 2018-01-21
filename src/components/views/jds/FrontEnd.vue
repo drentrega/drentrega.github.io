@@ -1,66 +1,63 @@
 <template>
   <v-app light>
-    <v-toolbar class="white">
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+
+    <v-toolbar light>
+      <v-btn icon to="/">
+        <v-icon>arrow_back</v-icon>
+      </v-btn>
+      <v-spacer />
+      <v-toolbar-title>Farmácia Já</v-toolbar-title>
     </v-toolbar>
+
     <v-content>
+
       <section>
-        <v-parallax src="/static/img/stock/dev-01-min.jpeg" height="600">
-          <v-layout
-            column
-            align-center
-            justify-center
-            class="white--text"
-          >
-            <img src="assets/vuetify.png" alt="Vuetify.js" height="200">
-            <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
-            <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
-            <v-btn
-              class="blue lighten-2 mt-5"
-              dark
-              large
-              href="/pre-made-themes"
-            >
-              Get Started
-            </v-btn>
+        <v-parallax src="/static/img/stock/dev-05-1600-black-min.png" height="600">
+          <v-layout column align-center justify-center class="white--text">
+              <h1 class="white--text mb-2 display-1 text-xs-center paralax-title">
+                Senior Front-End
+              </h1>
+              <v-btn class="blue lighten-2 mt-5" dark large href="mailto:talentos@farmaciaja.com.br">
+                Entrar em contato
+              </v-btn>
           </v-layout>
         </v-parallax>
       </section>
 
       <section>
-        <v-layout
-          column
-          wrap
-          class="my-5"
-          align-center
-        >
-          <v-flex xs12 sm4 class="my-3">
+        <v-layout column wrap class="my-5" align-center>
+
+          <v-flex xs12 sm6 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">The best way to start developing</h2>
+              <h2 class="headline">A sua tela</h2>
               <span class="subheading">
-                Cras facilisis mi vitae nunc
+                vai mudar a forma como os brasileiros compram medicamentos
               </span>
             </div>
           </v-flex>
+
           <v-flex xs12>
+
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
                 <v-flex xs12 md4>
+
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
+                      <div class="headline text-xs-center">Desenvolva na onda</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                      Utilizamos o quê é último do último de tecnologia. Você vai se empolgar com nossas soluções, e, o
+                      quê é melhor: você vai aprender muito conosco!
                     </v-card-text>
                   </v-card>
+
                 </v-flex>
                 <v-flex xs12 md4>
+
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
                       <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
@@ -74,8 +71,10 @@
                       Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
                     </v-card-text>
                   </v-card>
+
                 </v-flex>
                 <v-flex xs12 md4>
+
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
                       <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
@@ -194,3 +193,13 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+  .paralax-title {
+    margin-top: 8em;
+  }
+
+  .transparent {
+    background-color: rgba(0,0,0,0)
+  }
+</style>

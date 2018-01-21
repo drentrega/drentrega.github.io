@@ -52,7 +52,7 @@ export default {
           content: 'Venha bater um papo conosco mandando um e-mail para talentos@farmaciaja.com.br!',
         },
         {
-          image: '/static/img/stock/dev-01-1200-min.png',
+          image: '/static/img/stock/dev-01-480-min.png',
           title: 'Front-End',
           content: 'Temos oportunidades para desenvolvedores Front-End! Clique nas opções abaixo para saber mais!',
           actions: [
