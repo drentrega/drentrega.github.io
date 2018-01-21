@@ -19,13 +19,14 @@
 
       <v-card-actions v-if="actions">
         <v-spacer />
-        <v-btn v-for="(action, index) in actions"
-          :key="index"
-          :to="action.link"
-          flat class="blue--text"
-        >
-          {{ action.name }}
-        </v-btn>
+        <div v-for="(action, index) in actions" :key="index">
+          <v-btn v-if="!action.linkName" :to="action.link" flat class="blue--text">
+            {{ action.name }} asdad
+          </v-btn>
+          <v-btn v-else :to="{ name: action.linkName }" flat class="blue--text">
+            {{ action.name }}
+          </v-btn>
+        </div>
       </v-card-actions>
 
     </v-card>

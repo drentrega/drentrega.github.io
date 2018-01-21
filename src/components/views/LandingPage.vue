@@ -58,11 +58,11 @@ export default {
           actions: [
             {
               name: 'Vagas',
-              link: '/jds/front-end',
+              linkName: 'front-end-jd',
             },
             {
               name: 'Desafio',
-              link: '/challenges/front-end',
+              linkName: 'front-end-challenge',
             },
           ],
         },

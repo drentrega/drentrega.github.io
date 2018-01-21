@@ -16,6 +16,7 @@ const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 const env = config.build.env
+const preRenderList = require('../src/prerender')
 
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -104,11 +105,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       // Absolute path to compiled SPA
       path.join(__dirname, '../'),
       // List of routes to prerender
-      [
-        '/',
-        '/jds/front-end',
-        '/challenges/front-end'
-      ],
+      preRenderList,
       {
         // options
       }
