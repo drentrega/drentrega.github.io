@@ -6,13 +6,14 @@ const utils = require('./utils')
 const webpack = require('webpack')
 const config = require('../config')
 const merge = require('webpack-merge')
+const loadMinified = require('./load-minified')
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
-const loadMinified = require('./load-minified')
 
 const env = config.build.env
 
@@ -98,14 +99,20 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    // service worker caching
-    new SWPrecacheWebpackPlugin({
-      cacheId: 'challenges',
-      filename: 'static/service-worker.js',
-      staticFileGlobs: ['./**/*.{js,html,css}'],
-      minify: true,
-      stripPrefix: '/'
-    })
+
+    new PrerenderSpaPlugin(
+      // Absolute path to compiled SPA
+      path.join(__dirname, '../'),
+      // List of routes to prerender
+      [
+        '/',
+        '/jds/front-end',
+        '/challenges/front-end'
+      ],
+      {
+        // options
+      }
+    ),
   ]
 })
 

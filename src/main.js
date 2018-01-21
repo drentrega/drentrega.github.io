@@ -2,15 +2,21 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import Vuetify from 'vuetify';
-import Icon from 'vue-awesome/components/Icon';
+import VueAnalytics from 'vue-analytics';
 
 import App from './App';
 import router from './router';
 
-import('vue-awesome/icons');
 import('vuetify/dist/vuetify.min.css');
 
-Vue.use(Icon);
+Vue.use(VueAnalytics, {
+  id: 'UA-112801402-2',
+  router,
+  checkDuplicatedScript: true,
+  autoTracking: {
+    pageviewOnLoad: false,
+  },
+});
 
 Vue.use(Vuetify, {
   theme: {

@@ -3,14 +3,12 @@ import Router from 'vue-router';
 
 import LayoutApp from '@/components/layouts/App';
 import ViewLandingPage from '@/components/views/LandingPage';
-import ViewJdFrontEnd from '@/components/views/jds/FrontEndView';
-import ViewChallengeFrontEnd from '@/components/views/challenges/FrontEndView';
-
+import ViewJdFrontEnd from '@/components/views/jds/FrontEnd';
+import ViewChallengeFrontEnd from '@/components/views/challenges/FrontEnd';
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '/challenges',
@@ -23,14 +21,8 @@ export default new Router({
       ],
     },
     {
-      path: '/jds',
-      component: LayoutApp,
-      children: [
-        {
-          path: '/jds/front-end',
-          component: ViewJdFrontEnd,
-        },
-      ],
+      path: '/jds/front-end',
+      component: ViewJdFrontEnd,
     },
     {
       path: '*',

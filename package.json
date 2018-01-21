@@ -19,11 +19,12 @@
   "dependencies": {
     "pug": "^2.0.0-rc.4",
     "vue": "^2.5.2",
-    "vue-awesome": "^2.3.4",
+    "vue-analytics": "^5.8.0",
     "vue-router": "^3.0.1",
     "vuetify": "^0.17.6"
   },
   "devDependencies": {
+    "prerender-spa-plugin": "^2.1.0",
     "autoprefixer": "^7.1.5",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",

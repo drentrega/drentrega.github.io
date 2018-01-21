@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import Post from '@/components/PostInCard';
+import Post from '@/components/PostCard';
 
 export default {
   components: {
@@ -52,16 +52,16 @@ export default {
           content: 'Venha bater um papo conosco mandando um e-mail para talentos@farmaciaja.com.br!',
         },
         {
-          image: 'https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/docks.jpg',
+          image: '/static/img/stock/dev-01-1200-min.png',
           title: 'Front-End',
-          content: 'Para saber mais sobre as vagas de Front-End descubra aqui.',
+          content: 'Temos oportunidades para desenvolvedores Front-End! Clique nas opções abaixo para saber mais!',
           actions: [
             {
-              name: 'Job Description',
+              name: 'Vagas',
               link: '/jds/front-end',
             },
             {
-              name: 'Challenge',
+              name: 'Desafio',
               link: '/challenges/front-end',
             },
           ],
