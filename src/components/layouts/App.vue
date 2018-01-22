@@ -1,7 +1,7 @@
 <template>
   <v-app id="inspire">
 
-    <v-navigation-drawer clipped fixed v-model="drawer" app>
+    <v-navigation-drawer app clipped fixed v-model="drawer">
       <v-list>
 
         <v-subheader>Challenges</v-subheader>
@@ -69,7 +69,7 @@
 <script>
 export default {
   data: () => ({
-    drawer: null,
+    drawer: true,
   }),
 };
 </script>
