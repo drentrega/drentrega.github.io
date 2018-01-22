@@ -116,7 +116,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">important_devices</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">ES6 JS</div>
@@ -131,14 +131,14 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">widgets</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">extensions</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Componentiação & Storybook</div>
+                      <div class="headline">Componentização</div>
                     </v-card-title>
                     <v-card-text>
-                      Adoramos arquitetura e reutilização de código para aumento de produtividade. Você será peça chave
-                      na montagem dessa estrutura!
+                      Adoramos arquitetura e reutilização de código para aumento de produtividade. Você montará o nosso
+                      Storybook de componentes!
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -146,7 +146,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">healing</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">speaker_phone</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Mobile first</div>
@@ -181,7 +181,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">line_style</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Experiência</div>
@@ -196,7 +196,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">widgets</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">group_work</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline">Time Ágil</div>
@@ -211,7 +211,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">healing</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">speaker_notes</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Inglês Intermediário</div>
@@ -219,6 +219,37 @@
                     <v-card-text>
                       Afinal toda documentação está mínimamente em inglês. Não é um requisito eliminatório, mas
                       certamente aumenta a produtividade.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">playlist_add_check</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Testes</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Desenvolvimento com TDD e/ou BDD. Bibliotecas como Jasmine e/ou Karma, assim como Phantom,
+                      Protractor, Nightmare e/ou Nightwatch.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+
+
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">search</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">SEO</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Organização de meta-data, otimização de tags e de urls, performance de loading e redenrização das
+                      páginas, Google Insights, etc!
                     </v-card-text>
                   </v-card>
                 </v-flex>

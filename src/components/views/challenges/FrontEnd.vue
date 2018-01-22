@@ -28,7 +28,7 @@
                   Faremos uma SPA que faça controle de tarefas! Para isso usaremos o <v-chip label class="line">vue-cli
                   </v-chip> para montar a estrutura básica do nosso projeto.
                 </p>
-                <v-alert outline color="grey" icon="code" :value="true">
+                <v-alert dark color="grey" icon="code" :value="true">
                   npm i -g vue-cli
                 </v-alert>
 
