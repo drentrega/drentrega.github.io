@@ -41,7 +41,7 @@ export default {
     title: String,
     content: String,
     image: String,
-    actions: Object,
+    actions: Array,
   },
 };
 </script>
