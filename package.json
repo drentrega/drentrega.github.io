@@ -1,10 +1,13 @@
 {
-  "name": "@fj/farmaciaja.github.io",
+  "name": "@dre/drentrega.github.io",
   "version": "1.0.0",
   "description": "Users service",
   "main": "build/build.js",
-  "repository": "https://github.com/farmaciaja/farmaciaja.github.io",
-  "author": "@fj",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/drentrega/drentrega.github.io.git"
+  },
+  "author": "@dre",
   "contributors": [
     "Filipe Forattini <filipeforattini1@gmail.com> (https://github.com/filipeforattini/)"
   ],

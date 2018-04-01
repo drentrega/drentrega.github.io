@@ -6,7 +6,7 @@
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-spacer />
-      <v-toolbar-title>Farmácia Já</v-toolbar-title>
+      <v-toolbar-title>Dr. Entrega</v-toolbar-title>
     </v-toolbar>
 
     <v-content>
@@ -17,7 +17,7 @@
               <h1 class="white--text mb-2 display-3 text-xs-center paralax-title">
                 Front-End Pl/Sr
               </h1>
-              <v-btn class="blue lighten-2 mt-5" dark large href="mailto:talentos@farmaciaja.com.br">
+              <v-btn class="blue lighten-2 mt-5" dark large href="mailto:talentos@drentrega.com.br">
                 Entre em contato
               </v-btn>
           </v-layout>
@@ -93,7 +93,7 @@
         <v-parallax src="/static/img/stock/dev-06-1600-min.png" height="340">
           <v-layout column align-center justify-center>
             <div class="headline white--text mb-3 text-xs-center">Não trabalhe, entre conosco em uma missão!</div>
-              <v-btn class="blue lighten-2 mt-5" dark large href="mailto:talentos@farmaciaja.com.br">
+              <v-btn class="blue lighten-2 mt-5" dark large href="mailto:talentos@drentrega.com.br">
                 Entrar em contato
               </v-btn>
           </v-layout>
@@ -265,7 +265,7 @@
         <v-parallax src="/static/img/stock/dev-04-1600-min.png" height="340">
           <v-layout column align-center justify-center>
             <div class="headline white--text mb-3 text-xs-center">Venha trabalhar conosco!</div>
-              <v-btn class="blue lighten-2 mt-5" dark large href="mailto:talentos@farmaciaja.com.br">
+              <v-btn class="blue lighten-2 mt-5" dark large href="mailto:talentos@drentrega.com.br">
                 Entre em contato
               </v-btn>
           </v-layout>
@@ -311,7 +311,7 @@
                       <v-icon class="blue--text text--lighten-2">email</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>talentos@farmaciaja.com.br</v-list-tile-title>
+                      <v-list-tile-title>talentos@drentrega.com.br</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                 </v-list>

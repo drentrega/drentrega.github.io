@@ -51,7 +51,7 @@
     <v-toolbar app fixed clipped-left>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>
-        <router-link to="/">Farmácia Já</router-link>
+        <router-link to="/">Dr. Entrega</router-link>
       </v-toolbar-title>
     </v-toolbar>
 

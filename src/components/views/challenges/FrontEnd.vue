@@ -191,7 +191,7 @@
               <div slot="header">Entrega</div>
               <v-card>
                 <v-card-text class="grey lighten-3 text-xs-center">
-                  Enviar um e-mail para <v-chip label class="inline">talentos@farmaciaja.com.br</v-chip> com a url do
+                  Enviar um e-mail para <v-chip label class="inline">talentos@drentrega.com.br</v-chip> com a url do
                   repositório do seu projeto.
                 </v-card-text>
               </v-card>
